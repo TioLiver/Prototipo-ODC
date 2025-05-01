@@ -1,0 +1,165 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #fefefe; /* Puedes probar con #fefefe, #f9f9f9, o #eceff1 para tonos diferentes */
+    color: #2c3e50;
+    margin: 0;
+    padding: 30px;
+    line-height: 1.8;
+    font-size: 17px;
+  }
+  
+  .container_2{ max-width: 900px;
+    margin: auto;
+    background-color: #c4c2d4;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-out;}
+  .container {
+    max-width: 900px;
+    margin: auto;
+    background-color: #d9e4e7;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-out;
+  }
+  
+  h1 {
+    color: #1a237e;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .autor-info, .info {
+    margin-bottom: 30px;
+    font-size: 1.05em;
+    color: #455a64;
+    animation: fadeIn 1.3s ease-out;
+  }
+  
+  h2 {
+    color: #283593;
+    font-size: 1.8em;
+    margin-top: 40px;
+    border-bottom: 2px solid #c5cae9;
+    padding-bottom: 5px;
+    animation: fadeIn 1.2s ease-out;
+  }
+  
+  p {
+    margin-top: 10px;
+    max-width: 800px;
+    animation: fadeInUp 1s ease-out;
+  }
+  
+  a {
+    color: #1565c0;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: -2px;
+    background-color: #1565c0;
+    transition: width 0.3s;
+  }
+  
+  a:hover {
+    color: #0d47a1;
+  }
+  
+  a:hover::after {
+    width: 100%;
+  }
+  
+  ul {
+    padding-left: 20px;
+    margin-top: 10px;
+  }
+  
+  .referencias li {
+    margin-bottom: 10px;
+    font-size: 0.95em;
+  }
+  
+  /* Navegación interna (índice) */
+  .nav-interna {
+    margin: 30px 0;
+    padding: 15px 20px;
+    background-color: #e8eaf6;
+    border-left: 5px solid #3f51b5;
+    border-radius: 4px;
+    animation: fadeIn 1.3s ease-out;
+  }
+  
+  .nav-interna ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .nav-interna a {
+    font-weight: bold;
+    color: #1a237e;
+  }
+  
+  .nav-interna a:hover {
+    text-decoration: underline;
+    color: #0d47a1;
+  }
+  
+  /* Animaciones */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    } to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    } to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      padding: 20px;
+      font-size: 15px;
+    }
+  
+    .container {
+      padding: 20px;
+    }
+  
+    h1 {
+      font-size: 1.8em;
+    }
+  
+    h2 {
+      font-size: 1.4em;
+    }
+  
+    .nav-interna ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  
