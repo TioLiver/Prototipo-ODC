@@ -122,9 +122,9 @@ body {
   
 .nav-interna a {
   white-space: nowrap;
-  padding: 10px 12px;
+  padding: 8px 10px;
   background-color: #c5cae9;
-  border-radius: 5px;
+  border-radius: 3px;
   font-weight: bold;
   color: #1a237e;
   text-decoration: none;
@@ -183,9 +183,9 @@ body {
     h2 {
       font-size: 1.4em;
     }
-  
+  p{font-size: 1em;}
     .nav-interna ul {
-      flex-direction: column;
+      flex-direction:row;
       gap: 10px;
     }
   }
