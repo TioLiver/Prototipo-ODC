@@ -81,8 +81,7 @@ body {
   }
   
   ul {
-    padding-left: 20px;
-    margin-top: 10px;
+    margin-bottom: 20px;
   }
   
   .referencias li {
@@ -118,6 +117,13 @@ body {
     color: #0d47a1;
   }
   
+  .footer {
+    text-align: center;
+    font-size: 0.9em;
+    margin-top: 40px;
+    color: #666;
+  }
+  
   /* Animaciones */
   @keyframes fadeIn {
     from {
@@ -148,7 +154,9 @@ body {
     .container {
       padding: 20px;
     }
-  
+  .container_2{
+    padding: 20 px;
+  }
     h1 {
       font-size: 1.8em;
     }
